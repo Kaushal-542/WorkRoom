@@ -2,7 +2,7 @@ import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyBYhZhzwx_X2ikaDPgH_mdsxa3xybr_vVQ",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "video-conferencing-fc429.firebaseapp.com",
   projectId: "video-conferencing-fc429",
   storageBucket: "video-conferencing-fc429.appspot.com",
